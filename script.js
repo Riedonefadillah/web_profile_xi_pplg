@@ -21,7 +21,7 @@ if (localStorage.getItem('audioPlaying') === '1') {
 }
 soundBtn.addEventListener('click', () => {
   if (playing) { audio.pause(); soundBtn.textContent = '🔊'; localStorage.setItem('audioPlaying','0'); }
-  else { audio.play().then(()=>{ soundBtn.textContent = '🔇'; localStorage.setItem('audioPlaying','1'); }).catch(()=>alert('Tambahkan file assets/backsound.mp3')); }
+  else { audio.play().then(()=>{ soundBtn.textContent = '🔇'; localStorage.setItem('audioPlaying','1'); }).catch(()=>alert('Tambahkan file assets/backsound2.mp3')); }
   playing = !playing;
 });
 setInterval(()=>{ if(!audio.paused) localStorage.setItem('audioTime', audio.currentTime); }, 1000);
