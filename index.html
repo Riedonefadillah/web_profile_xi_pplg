@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>XI PPLG - Home</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">XI <span>PPLG</span></div>
+  <nav>
+    <ul class="menu">
+      <li class="has-sub">
+        <a href="#home" class="active">Home ▾</a>
+        <ul class="submenu">
+          <li><a href="#about">About</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Galeri</a></li>
+    </ul>
+    <div class="actions">
+      <button id="soundToggle" title="Backsound">🔊</button>
+      <button id="themeToggle" title="Dark mode">🌙</button>
+    </div>
+  </nav>
+</header>
+
+<!-- Welcome -->
+<section id="home" class="hero reveal">
+  <div class="hero-inner">
+    <h1>Selamat Datang di <span class="grad">XI PPLG</span></h1>
+    <p>Kelas dengan penuh semangat coding, kreativitas, dan kekeluargaan.</p>
+    <a href="#about" class="btn-primary">Kenalan Yuk</a>
+  </div>
+</section>
+
+<!-- About / Jurusan -->
+<section id="about" class="about reveal">
+  <div class="about-img">
+    <img src="assets/images/img.jpg" alt="Icon PPLG"/>
+  </div>
+  <div class="about-text">
+    <h2>Tentang <span class="grad">PPLG</span></h2>
+    <h3>Pengembangan Perangkat Lunak & Gim</h3>
+    <p>PPLG adalah jurusan yang mempelajari pemrograman, pengembangan aplikasi web, mobile, hingga gim. Kami dilatih berpikir logis, kreatif, dan kolaboratif untuk membangun produk digital berkualitas.</p>
+    <p>Kelas <b>XI PPLG</b> adalah keluarga yang penuh ide, canda, dan ambisi. Bersama-sama kami belajar, berkarya, dan bertumbuh menjadi developer masa depan.</p>
+  </div>
+</section>
+
+<!-- Wali Kelas -->
+<section class="walas reveal">
+  <div class="walas-img">
+    <img src="assets/images/walas.jpeg" alt="Wali Kelas"/>
+  </div>
+  <div class="walas-text">
+    <span class="tag">Wali Kelas</span>
+    <h2><span class="grad-blue">Eka herdit juningsih</span></h2>
+    <ul class="bio">
+      <li><b>NIP</b><span>1234567890</span></li>
+      <li><b>Mapel</b><span>KK RPL 1,3,4</span></li>
+      <li><b>Asal</b><span>Indonesia</span></li>
+      <li><b>Motto</b><span>"Belajar tanpa batas."</span></li>
+    </ul>
+    <p>Beliau adalah sosok yang penyabar,baik,peduli, inspiratif, dan selalu mendukung setiap langkah siswa XI PPLG. Dengan pengalaman dan pengetahuan yang ia punya, beliau membimbing kami menjadi pribadi yang tangguh,disiplin dan berkarakter.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 XI PPLG • Made with 💙</p>
+</footer>
+
+<audio id="bgAudio" loop>
+  <source src="assets/backsound.mp3" type="audio/mpeg"/>
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
