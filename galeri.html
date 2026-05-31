@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>XI PPLG - Galeri</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">XI <span>PPLG</span></div>
+  <nav>
+    <ul class="menu">
+      <li class="has-sub">
+        <a href="index.html">Home ▾</a>
+        <ul class="submenu">
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+      </li>
+      <li><a href="galeri.html" class="active">Galeri</a></li>
+    </ul>
+    <div class="actions">
+      <button id="soundToggle" title="Backsound">🔊</button>
+      <button id="themeToggle" title="Dark mode">🌙</button>
+    </div>
+  </nav>
+</header>
+
+<section class="gallery-head reveal">
+  <h1>Galeri <span class="grad">Kenangan</span> PPLG</h1>
+  <p>Kumpulan momen berharga selama perjalanan kami di kelas XI PPLG bersama wali kelas.</p>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="foto">📷 Foto</button>
+    <button class="tab-btn" data-tab="video">🎬 Video</button>
+  </div>
+</section>
+
+<section id="foto" class="tab-content active reveal">
+  <div class="grid">
+    <img src="assets/images/img1.jpg" alt="17 agustus"/>
+    <img src="assets/images/img2.jpg" alt="batik nasional"/>
+    <img src="assets/images/img3.jpg" alt="Bukber"/>
+    <img src="assets/images/img4.jpg" alt="Hari kartini"/>
+  </div>
+</section>
+
+<section id="video" class="tab-content reveal">
+  <h3>Video Kenangan</h3>
+  <div class="video-grid">
+    <video controls >
+      <source src="assets/videos/vid3.mp4" type="video/mp4"/>
+    </video>
+    <video controls>
+      <source src="assets/videos/vid2.mp4" type="video/mp4"/>
+    </video>
+  </div>
+
+  <h3 class="walas-vid-title">🎓 Spesial untuk Wali Kelas </h3>
+  <div class="walas-video">
+    <video controls>
+      <source src="assets/videos/vid1.mp4" type="video/mp4"/>
+    </video>
+  </div>
+</section>
+
+<div class="surat-wrap reveal">
+  <button class="btn-surat" onclick="openSurat()">💌 Buka Surat Ucapan</button>
+</div>
+
+<!-- Modal Surat -->
+<div id="suratModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeSurat()">&times;</span>
+    <h2>Surat Ucapan untuk XI PPLG</h2>
+    <p>Terima kasih bu eka untuk kenangan yang kita lalui bersama dengan penuh hal-hal luar biasa meskipun ada sedih dan ada pula senangnya. Kelas ini bukan sekadar ruang belajar, tapi rumah kedua yang penuh cerita dan bagaikan keluarga. jangan lupakan kami, semoga kita bisa meraih mimpi yang diinginkan masing-masing. Terima kasih bimbingan dan kenangannya 💙</p>
+    <p style="text-align:right"><i>— Keluarga XI PPLG</i></p>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>© 2026 XI PPLG • Made with 💙</p>
+</footer>
+
+<audio id="bgAudio" loop>
+  <source src="assets/backsound.mp3" type="audio/mpeg"/>
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
