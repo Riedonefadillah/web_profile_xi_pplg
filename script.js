@@ -1,4 +1,4 @@
-// Dark mode
+
 const themeBtn = document.getElementById('themeToggle');
 if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark');
 themeBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
@@ -9,7 +9,7 @@ themeBtn.addEventListener('click', () => {
   localStorage.setItem('theme', dark ? 'dark' : 'light');
 });
 
-// Backsound
+
 const audio = document.getElementById('bgAudio');
 const soundBtn = document.getElementById('soundToggle');
 audio.volume = 0.4;
